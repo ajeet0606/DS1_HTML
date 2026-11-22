@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hotel room</title>
+</head>
+<body>
+    <fieldset>
+        <header style="text-align-last: center;">
+            <h1>Hotel Room Booking Form</h1>
+        </header>
+   <form href="https://in.bookmyshow.com/">
+    
+        <label for="roomType">Select Room Type:</label>
+        <select name="roomType" id="roomType">
+            <option value="single">No Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+        <label for="fee">Room Fee:</label>
+        <select name="fee" id="fee">
+            <option value="500">₹500</option>
+            <option value="1000">₹1000</option>
+            <option value="1500">₹1500</option>
+        </select><br><br>
+        <label for="breakfast">Include Breakfast:</label>
+        <input type="radio" name="breakfast" value="yes" id="breakfastYes"><label for="breakfastYes">Yes</label>
+        <input type="radio" name="breakfast" value="yes" id="breakfastNo"><label for="breakfastNo">Yes</label><br><br>
+
+        <label for="numNights">Number of Nights:</label>
+        <input type="number" name="numNights" id="numNights" min="1" required><br><br>
+
+        <input type="submit" value="Calculate Cost">
+    </form> </fieldset>
+</body>
+</html>
