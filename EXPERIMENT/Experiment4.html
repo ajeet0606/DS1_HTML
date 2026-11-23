@@ -1,37 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Hotel room</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel room</title>
+
+  </head>
+  <body>
     <fieldset>
-        <header style="text-align-last: center;">
-            <h1>Hotel Room Booking Form</h1>
-        </header>
-   <form href="https://in.bookmyshow.com/">
-    
-        <label for="roomType">Select Room Type:</label>
-        <select name="roomType" id="roomType">
-            <option value="single">No Room</option>
-            <option value="double">Double Room</option>
-            <option value="suite">Suite</option>
-        </select><br><br>
-        <label for="fee">Room Fee:</label>
-        <select name="fee" id="fee">
-            <option value="500">₹500</option>
-            <option value="1000">₹1000</option>
-            <option value="1500">₹1500</option>
-        </select><br><br>
-        <label for="breakfast">Include Breakfast:</label>
-        <input type="radio" name="breakfast" value="yes" id="breakfastYes"><label for="breakfastYes">Yes</label>
-        <input type="radio" name="breakfast" value="yes" id="breakfastNo"><label for="breakfastNo">Yes</label><br><br>
+      <header style="text-align-last: center">
+        <h1>Hotel Room Booking Form</h1>
+      </header>
+      <form href="https://in.bookmyshow.com/">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required /><br /><br />
 
-        <label for="numNights">Number of Nights:</label>
-        <input type="number" name="numNights" id="numNights" min="1" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required /><br /><br />
+        <label for="phone">Phone :</label>
+        <input type="tel" name="phone" id="phone" required /><br /><br />
+        <label for="date">Check-in Date:</label>
+        <input type="date" name="date" id="date" required /><br /><br />
+        <label for="time">Check-out Date:</label>
+        <input type="date" name="time" id="time" required /><br /><br />
+        <label for="roomtype">Room Type:</label>
+        <select name="roomtype" id="roomtype">
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="suite">Suite</option></select
+        ><br /><br />
+        <label for="guests">Number of Guests:</label>
+        <input
+          type="number"
+          name="guests"
+          id="guests"
+          min="1"
+          required
+        /><br /><br />
+        <label for="request">Special Requests:</label>
+        <textarea name="request" id="request"></textarea><br /><br />
 
-        <input type="submit" value="Calculate Cost">
-    </form> </fieldset>
-</body>
+        <button type="submit">Book Now</button>
+        <button type="reset">
+          Reset
+          <form></form>
+        </button>
+      </form>
+    </fieldset>
+  </body>
 </html>
